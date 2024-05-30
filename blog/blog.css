@@ -1,6 +1,6 @@
 header {
     text-align: center;
-    font:  Impact, serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     color: #473144;
 }
 
@@ -13,13 +13,28 @@ ul {
 
 a {
     text-decoration: none;
+    color: #AF1B3F;
 }
 
-main {
-    font: Helvetica, Arial, sans-serif;
+nav {
+    border: #EFC69B;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#catalogue {
+    font-family: Helvetica, Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
     grid-gap: 1rem;
+    padding: 15px;
+}
+
+.filter {
+    grid-column: 3/4;
+    grid-row: 1/ span 2;
+    padding: 5px;
+
 }
 
 h2 {
@@ -28,4 +43,29 @@ h2 {
 
 body {
     color: #473144;
+}
+
+.book-info {
+    border-right: 2px solid #EFC69B;
+    /* border-right: #EFC69B;
+    border-style: solid;
+    border-width: 2px; */
+    text-align: right;
+    padding-right: 10px;
+
+}
+
+.filter {
+    border: #EFC69B;
+    border-style: solid;
+}
+
+img {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.date {
+    font-size: 20px;
 }
