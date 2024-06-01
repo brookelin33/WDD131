@@ -29,7 +29,7 @@ const articles = [
     title: "Belgariad Book One: Pawn of Prophecy",
     date: "Feb 12, 2022",
     description: "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himslef Wolf -- a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission. ",
-    imgSrc: "https://imgages-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+    imgSrc: "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
     imgAlt: "Book cover for Pawn of Prophecy",
     ages: "12-16",
     genre: "Fantasy",
