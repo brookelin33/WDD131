@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Card Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="creditcard.css">
+    <link rel="favicon" href="favicon.png">
 </head>
 <body>
     <div class = "main">
@@ -20,19 +21,23 @@
                     height="55px">
             </div>
             <div class="card-number">
-                <input type="text" id="card-number" placeholder="Card Number" maxlength="16">
+                <p>CARD NUMBER</p>
+                <input type="text" id="card-number" placeholder="1234 5678 9101 1020" maxlength="16">
             </div>
             <div class="card-holder">
-                <input type="text" id="card-holder" placeholder="Card Holder">
+                <p>CARD HOLDER</p>
+                <input type="text" id="card-holder" placeholder="John Doe">
             </div>
             <div class="card-expiration">
+                <p>EXPIRATION</p>
                 <input type="text" id="card-expiration" placeholder="MM/YY" maxlength="5">
             </div>
         </div>
         <div class="back">
+            <div class="stripe"></div>
             <div class="card-cvc">
-                <input type="text" id="card-cvc" placeholder="CVC" maxlength="3">
-                <div class="stripe"></div>
+                <p>CVC</p>
+                <input type="text" id="card-cvc" placeholder="xxx" maxlength="3">
             </div>
         </div>
     </div>
