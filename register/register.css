@@ -159,16 +159,16 @@
       width: 100%;
     }
   }
-  
+/*   
   .participants {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .participant {
     grid-column: span 1;
 }
 
-#add-participant-button {
-    grid-column: span 2;
-}
+#add-button {
+    grid-column: 1/3;
+} */
