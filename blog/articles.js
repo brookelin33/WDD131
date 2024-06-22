@@ -36,3 +36,9 @@ const articles = [
     stars: "⭐⭐⭐⭐⭐"
   }
 ];
+
+document.querySelector('#catalogue').innerHTML = articles
+const date = document.createElement('p');
+date.textContent = articles.date;
+document.querySelector('#catalogue').appendChild(date); 
+

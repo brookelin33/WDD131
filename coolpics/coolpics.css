@@ -60,6 +60,7 @@ main {
     justify-items: center;
     padding: 10px;
     cursor: pointer;
+    display: none;
   }
 
 
@@ -71,7 +72,20 @@ main {
 
     li {
         padding: 5px;
+        display: none;
     }
+
+    .menu-button {
+        display: block;
+        margin: 5px;
+        width: 25px;
+        height: 25px;
+      }
+
+    .menu {
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 700px) {
@@ -118,9 +132,6 @@ main {
             align-items: center;
         }
 
-        .menu-button {
-            display: none;
-          }
 }
 
 }
