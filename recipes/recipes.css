@@ -17,7 +17,7 @@ header img {
 header {
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
 }
 
 img {
@@ -40,6 +40,23 @@ img {
     width: 100%;
 }
 
+.search form {
+    display: flex;
+    width: 100%;
+    margin: 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.search button {
+    padding: 10px;
+    font-size: 1em;
+}
+
 .recipe img {
     width: 100%;
 }
@@ -60,6 +77,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 footer {
@@ -81,8 +99,21 @@ body {
     align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+.image-container, .recipe {
+    flex: 1; 
+}
+
+@media screen and (min-width: 700px) {
     main {
         flex-direction: row;
+    }
+
+    .recipe-image {
+        width: 100%;
+    }
+    
+    .recipe {
+        padding-left: 20px;
+        align-self: flex-start;
     }
 }
