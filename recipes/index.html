@@ -13,7 +13,6 @@
     <meta name="description" content="Recipes">
     <meta name="author" content="Brooke Gines">
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -25,30 +24,11 @@
         <div class="search">
             <form action="#">
                 <input type="text" name="search" id="search" placeholder="Find a recipe">
-                <button type="image" id="submit">Search</button>
+                <button type="image" id="search_button">Search</button>
             </form>
         </div>
     </header>
-    <main>
-        <div class="image-container">
-            <img class="recipe-image" src="images/german-gooseberry-cake.jpg" alt="Recipe image">
-        </div>
-        <div class="recipe">
-            <h2 class="recipe-type">Dessert</h2>
-            <h2 class="recipe-type">German</h2>
-            <h1 class="recipe-name">Gooseberry cake with vanilla cream and crumble</h1>      
-            <span
-                class="rating"
-                role="img"
-                aria-label="Rating: 5 out of 5 stars">
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">⭐</span>
-            </span>
-            <p class="recipe-description"> This gooseberry cake with crumble is easy to follow, a bit tart and not too sweet. Made up of a cake base, filled with fresh gooseberries and vanilla cream and finished off with crumble that's flavored with vanilla. A must have recipe for gooseberry lovers!!</p>
-        </div>
+    <main id="recipe">
     </main>
     <footer>
         <div class="social">
@@ -59,5 +39,6 @@
         </div>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
     </footer>
+    <script src="main.js" type="module"></script>
 </body>
 </html>
