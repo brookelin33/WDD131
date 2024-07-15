@@ -81,12 +81,14 @@ element.addEventListener("click", seach_button_click);
 function seach_button_click(e) {
     e.preventDefault();
     const searchedItem = document.getElementById("search").value.toLowerCase();
-    console.log("start");
-    console.log(document.getElementById("search").value);
-    console.log("end");
 
     let results = filterRecipes(searchedItem);
-    console.log(results);
+    let htmlResult = '';
+    results.forEach(r => {
+        htmlResult += recipeTemplate(r);
+    })
+
+    document.getElementById("recipe").innerHTML = htmlResult;
 }
 
 function filterRecipes(searchQuery) {
@@ -98,9 +100,18 @@ function filterRecipes(searchQuery) {
         else if (r.description.toLowerCase().includes(searchQuery)) {
             results.push(r);
         }
+        let tagsResult = r.tags.find((item) => item.toLowerCase().includes(searchQuery));
+        if (tagsResult) {
+            results.push(r);
+        }
+        let ingredientsResult = r.recipeIngredient.find((item) => item.toLowerCase().includes(searchQuery));
+        if (ingredientsResult) {
+            results.push(r);
+        }
     });
 
-    return results.sort(compare);
+    const distinctRecipes = [...new Set(results.map(obj => obj))];
+    return distinctRecipes.sort(compare);
 }
 
 function compare(a, b) {
