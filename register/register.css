@@ -170,7 +170,8 @@
     padding: 15px;
 }
 
-#add-button {
-  grid-column: span 3;
-  max-width: 100%;
+#add_button {
+    grid-column: span 2;
 }
+
+

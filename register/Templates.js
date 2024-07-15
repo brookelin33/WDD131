@@ -1,3 +1,5 @@
+export {participantTemplate, successTemplate}
+
 let participantCount = 1;
 function participantTemplate(count) {
     return `
@@ -64,6 +66,7 @@ function add_button_click(e) {
     const newParticipant = participantTemplate(participantCount);
     addButton.insertAdjacentHTML('beforebegin', newParticipant);
 }
+
 function successTemplate() {
     const participantForm = document.getElementById("participant-form");
     const adultName = document.getElementById("adult_name").value;
@@ -74,5 +77,3 @@ function successTemplate() {
     </div>
     `
 }
-
-export {participantTemplate, successTemplate}
