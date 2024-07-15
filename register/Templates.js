@@ -41,32 +41,6 @@ function participantTemplate(count) {
     `;
 }
 
-function init() {
-    document.getElementById("participant-info").innerHTML = participantTemplate(participantCount);
-}
-init();
-
-const addButton = document.getElementById("add_button");
-addButton.addEventListener("click", add_button_click);
-
-function add_button_click(e) {
-    console.log ("add button clicked");
-    e.preventDefault();
-    participantCount++;
-    const newParticipant = participantTemplate(participantCount);
-    addButton.insertAdjacentHTML('beforebegin', newParticipant);
-}
-
-const submitButton = document.getElementById("submitButton");
-submitButton.addEventListener("click", submit_button_click);
-
-function submit_button_click(e) {
-    console.log ("submit button clicked");
-    e.preventDefault();
-    const successHtml = successTemplate();
-    document.getElementById("success-template-message").innerHTML = successHtml;
-}
-
 function totalFees() {
     // the selector below lets us grab any element that has an id that begins with "fee"
     let feeElements = document.querySelectorAll("[id^=fee]");
@@ -83,6 +57,13 @@ function totalFees() {
     console.log('Total Fees:', total);
 }
 
+function add_button_click(e) {
+    console.log ("add button clicked");
+    e.preventDefault();
+    participantCount++;
+    const newParticipant = participantTemplate(participantCount);
+    addButton.insertAdjacentHTML('beforebegin', newParticipant);
+}
 function successTemplate() {
     const participantForm = document.getElementById("participant-form");
     const adultName = document.getElementById("adult_name").value;
@@ -93,3 +74,5 @@ function successTemplate() {
     </div>
     `
 }
+
+export {participantTemplate, successTemplate}

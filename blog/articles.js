@@ -37,8 +37,29 @@ const articles = [
   }
 ];
 
-document.querySelector('#catalogue').innerHTML = articles
-const date = document.createElement('p');
-date.textContent = articles.date;
-document.querySelector('#catalogue').appendChild(date); 
+function articleTemplate(article) {
+    return `<div id="catalogue">
+            <section class="book-info">
+                <p class="date">${article.date}</p>
+                <p>${article.ages}</p>
+                <p>${article.genre}</p>
+                <p>${article.stars}</p>
+            </section>
+            <section class="book">
+                <h2>${article.title}</h2>
+                <img src="${article.imgSrc}" alt="Book Picture">
+                <p>${article.description}</p>
+            </section>
+        </div>`;
+}
 
+function init() {
+  let articlesHtml = "";
+  articles.forEach((article) => {
+    articlesHtml += articleTemplate(article);
+  })
+
+  document.getElementById("articles").innerHTML = articlesHtml;
+}
+
+init();
