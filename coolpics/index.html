@@ -10,6 +10,10 @@
     <script src="coolpics.js" defer> </script>
 </head>
 <body>
+    <!-- <div class="viewer">
+        <button class="close-viewer">X</button>
+        <img src="norris-full.jpeg" alt="alt description">
+    </div> -->
     <header>
         <h1>Cool Pics 📷</h1>
         <nav class="menu">
@@ -27,7 +31,7 @@
         <section>
             <h2>Current Work</h2>
         </section>
-        <section class="gallery"></section>
+        <section class="gallery" onclick="viewHandler(event)">
         <img src="norris-sm.jpeg" alt="small image">
         <img src="norris-sm.jpeg" alt="small image">
         <img src="norris-sm.jpeg" alt="small image">
@@ -37,7 +41,7 @@
         <img src="norris-sm.jpeg" alt="small image">
         <img src="norris-sm.jpeg" alt="small image">
         <img src="norris-sm.jpeg" alt="small image">
-    </main>
+    </section>
     <footer>
         &copy;2024 Not a real site 😀
     </footer>
