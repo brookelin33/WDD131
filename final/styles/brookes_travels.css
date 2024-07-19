@@ -116,14 +116,13 @@ header {
     border-radius: 15%;
   }
 
-  /* #places {
+  article.place-grid {
     justify-content: center;
     margin: 15px;
-    width: 450px;
     padding: 20px;
     font-size: 20px;
     background-color: lightsteelblue;
-  } */
+  }
 
   .viewer {
     position: fixed;
@@ -150,7 +149,7 @@ header {
     align-self: end;
     cursor: pointer;
   }
-  
+
   footer {
     background-color: #E87288;
     color: black;

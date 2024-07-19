@@ -5,7 +5,7 @@ places.forEach((_place) => {
     article.classList.add("place-grid");
     const htmlelement = "h2";
     if (_place.name === "Brooke") {
-        htmlelement = "h3";
+        htmlelement = "h3"
     }
     const h2 = document.createElement(htmlelement);
     const img = document.createElement("img");
