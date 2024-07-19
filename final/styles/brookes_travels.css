@@ -1,182 +1,184 @@
 #contents {
-    font-family: "abril fatface", "DM serif display", "protest riot";
-    max-width: 1600px;
-    margin: 0 auto;
-    margin-right: 20px;
+  font-family: "abril fatface", "DM serif display", "protest riot";
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-right: 20px;
 }
 
 body {
-    padding: 2em;
-    font-size: 18px;
-    text-align: center;
-    font-family: "times new roman", "courier new";
+  padding: 2em;
+  font-size: 18px;
+  text-align: center;
+  font-family: "times new roman", "courier new";
 }
 
 header {
-    text-align: center;
-    padding: 0.5em;
-    text-align: center;
-    background-color: #E87288;
-    display: grid;
-    grid-template-columns: 150px auto;
-    font-size: 22px;
-    height: 100px;
-    border-radius: 10px;
-  }
-  
-  #logo-link {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  #logo_img {
-    width: 100px;
-    grid-column: 1/2;
-  }
-  
-  nav {
-    background-color: #E87288;
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: space-around;
-  }
-  nav  {
-    list-style-type: none;
-    display: flex;
-    
-  }
-  nav a {
-    padding:1em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-    
-  }
-  nav a:link, nav a:visited {
-    color: #2C2B61;
-  }
-  nav a:hover {
-    color: white;
-    background-color: #AE5565;
-  }
-  
-  .home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .intro {
-    grid-column: 2/3;
-    text-align: left;
-    justify-content: center;
-    font-size: 22px;
-    padding: 1em;
-    padding-top: 1em;
-    border-radius: 10px;
-  }
+  text-align: center;
+  padding: 0.5em;
+  text-align: center;
+  background-color: #e87288;
+  display: grid;
+  grid-template-columns: 150px auto;
+  font-size: 22px;
+  height: 100px;
+  border-radius: 10px;
+}
 
-  #boat-img {
-    border-radius: 25px;
-    justify-content: space-around;
-    position: relative;
-    width: 500px;
-    left: 20px;
-    bottom: 250px;
-    display: flex;
-  }
+#logo-link {
+  display: block;
+  margin: 0 auto;
+}
 
-   .thailand-p {
-    display: flex;
-    width: 100%;
-    height: 550px;
-    background-color: #4e4d9374;
-    font-size: 23px;
-    padding: 1.3em;
-    font-family: "abril fatface", "DM serif display", "protest riot";
-  }
+#logo_img {
+  width: 100px;
+  grid-column: 1/2;
+}
 
-  #market-img {
-    width: 450px;
-    border-radius: 10px;
-    margin-top: 20px;
-    grid-column: 1/2;
-    margin: 20px;
-  }
+nav {
+  background-color: #e87288;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-around;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link,
+nav a:visited {
+  color: #2c2b61;
+}
+nav a:hover {
+  color: white;
+  background-color: #ae5565;
+}
 
-  .place-grid {
-    display: flex;
-    justify-content: center;
-  }
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
-  .places-img {
-    width: 375px;
-    padding: 30px;
-    border-radius: 15%;
-  }
+.intro {
+  grid-column: 2/3;
+  text-align: left;
+  justify-content: center;
+  font-size: 22px;
+  padding: 1em;
+  padding-top: 1em;
+  border-radius: 10px;
+}
 
-  article.place-grid {
-    justify-content: center;
-    margin: 15px;
-    padding: 20px;
-    font-size: 20px;
-    background-color: lightsteelblue;
-  }
+#boat-img {
+  border-radius: 25px;
+  justify-content: space-around;
+  position: relative;
+  width: 500px;
+  left: 20px;
+  bottom: 250px;
+  display: flex;
+}
 
-  .viewer {
-    position: fixed;
-    top:0;left:0;bottom:0;right:0;
-    background: rgba(0,0,0,0.75);
-    display: grid;
-    grid-template-rows: 10% 90%;
-    grid-template-columns: 10% 80% 10%;
-  }
+.thailand-p {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  background-color: #4e4d9374;
+  font-size: 23px;
+  padding: 1.3em;
+  font-family: "abril fatface", "DM serif display", "protest riot";
+}
+
+#market-img {
+  width: 450px;
+  border-radius: 10px;
+  margin-top: 20px;
+  grid-column: 1/2;
+  margin: 20px;
+}
+
+.place-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.places-img {
+  width: 375px;
+  padding: 30px;
+  border-radius: 15%;
+}
+
+article.place-grid {
+  justify-content: center;
+  margin: 15px;
+  padding: 20px;
+  font-size: 20px;
+  background-color: lightsteelblue;
+}
+
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 10% 80% 10%;
+}
 
 .viewer img {
-    max-width: 100%;
-    max-height: 100%;
-    grid-row: 2/3;
-    grid-column: 2/3;
-    justify-self: center;
-    align-self: center;
+  max-width: 100%;
+  max-height: 100%;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
 }
 
 .close-viewer {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    justify-self: end;
-    align-self: end;
-    cursor: pointer;
-  }
+  grid-row: 1/2;
+  grid-column: 2/3;
+  justify-self: end;
+  align-self: end;
+  cursor: pointer;
+}
 
-  footer {
-    background-color: #E87288;
-    color: black;
-    font-size: 1.2em;
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
-  }
+footer {
+  background-color: #e87288;
+  color: black;
+  font-size: 1.2em;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
 
 footer a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 footer a:hover {
-    color: black;
+  color: black;
 }
 
 footer p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer .social img {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .third-grid {
@@ -184,7 +186,8 @@ footer .social img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#temple-img, #curry-img {
+#temple-img,
+#curry-img {
   width: 550px;
   justify-items: center;
   align-items: center;
@@ -198,17 +201,16 @@ footer .social img {
 .tips {
   padding: 25px;
   justify-items: center;
-  border-color: #2C2B61;
+  border-color: #2c2b61;
   border-style: solid;
   border-width: 10px;
   margin: 10px;
 }
-
 
 .black-background {
   width: 100%;
   margin: auto;
   align-items: center;
   grid-column: 1/5;
-  background-color: #AE5565;
+  background-color: #ae5565;
 }
